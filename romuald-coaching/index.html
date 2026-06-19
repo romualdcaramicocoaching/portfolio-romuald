@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ============================================
+         CONFIGURATION - MODIFIE CES LIGNES
+         ============================================ -->
+    <!-- Dans config.js en bas de ce fichier, change :
+         - TON_NOM → "Romuald" ou ton prénom
+         - TON_LIEN_CALENDLY → ton lien Calendly personnel
+         - TON_INSTAGRAM → ton pseudo Instagram
+         - TA_PHRASE_ACCROCHE → ta phrase d'accroche
+    -->
+    
+    <title>Coach Transformation Physique | Résultatsgarantis en 90 jours</title>
+    <meta name="description" content="Coach sportif spécialisé transformation physique durable. 80+ clients transformés. Méthode scientifque, nutrition adaptée, suivi quotidien. Résultats garantis.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Favicon - ICI: crée un fichier favicon.ico (16x16px ou 32x32px) -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+
+    <!-- ============================================
+         SECTION HERO - PREMIÈRE IMPRESSION
+         ============================================ -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <!-- IMAGE HERO BACKGROUND
+                 Taille recommandée: 1920x1080px (paysage, haute résolution)
+                 Type: JPG ou WebP
+                 Remplace: hero-bg.jpg par ta photo (salle de sport, entraînement, etc.)
+                 Alternative: Supprime cette img et utilise une couleur dans CSS
+            -->
+            <img src="images/hero-bg.jpg" alt="" class="hero-bg-img" onerror="this.style.display='none'">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <!-- PHOTO DE PROFIL COACH
+                 Taille recommandée: 400x400px minimum, format carré
+                 Type: PNG ou JPG avec fond transparent ou cohérent
+                 Remplace: coach-photo.jpg par ta photo
+                 Conseil: Photo professionnelle, torse ou visagenet
+            -->
+            <img src="images/coach-photo.jpg" alt="Coach Romuald" class="hero-profile-img" onerror="this.style.opacity='0.3'">
+            
+            <div class="hero-text">
+                <!-- MODIFICATION: Va dans CONFIG.js pour changer ces textes -->
+                <span class="hero-badge" id="config-badge">🔥 +100 CLIENTS TRANSFORMÉS</span>
+                <h1 id="config-title">Reprends le Contrôle de Ton Corps<br><span class="highlight">Sans Revolution</span></h1>
+                <p class="hero-subtitle" id="config-subtitle">
+                    Tu as arrêté le sport, pris du ventre, et perdu confiance en toi ? 
+                    Je t'aide à reprendre ta forme en 90 jours avec une méthode 
+                    <strong>scientifique et sans privation</strong>.
+                </p>
+                
+                <!-- CTA PRINCIPAL - LIEN CALENDLY
+                     IMPORTANT: Va dans config.js et remplace TON_LIEN_CALENDLY_HERE
+                     Par ton vrai lien Calendly (ex: https://calendly.com/romuald-coach/consultation)
+                -->
+                <a href="#" class="btn btn-primary hero-cta" id="config-cta" target="_blank" rel="noopener">
+                    <span>Réserve ton appel découverte gratuit</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                
+                <!-- PREUVE SOCIALE RAPIDE -->
+                <div class="hero-social-proof">
+                    <div class="proof-item">
+                        <span class="proof-number">+100</span>
+                        <span class="proof-label">clients accompagnés</span>
+                    </div>
+                    <div class="proof-item">
+                        <span class="proof-number">90%</span>
+                        <span class="proof-label">de taux de réussite</span>
+                    </div>
+                    <div class="proof-item">
+                        <span class="proof-number">⭐ 4.9</span>
+                        <span class="proof-label">sur Google (127 avis)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Flèche vers le bas -->
+        <a href="#apropos" class="scroll-indicator">
+            <span>Découvrir</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </a>
+    </section>
+
+    <!-- ============================================
+         SECTION PROBLEME - IDENTIFICATION
+         ============================================ -->
+    <section class="problem" id="probleme">
+        <div class="container">
+            <div class="problem-header">
+                <span class="section-tag">Tu te reconnais ?</span>
+                <h2>Ces situations te parlent ?</h2>
+            </div>
+            
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <span class="problem-emoji">😔</span>
+                    <p>Tu n'as plus d'énergie et tu te sens <strong>fatigué tout le temps</strong></p>
+                </div>
+                <div class="problem-card">
+                    <span class="problem-emoji">🤰</span>
+                    <p>Tu as pris du <strong>ventre</strong> et tes ancien vêtements ne passent plus</p>
+                </div>
+                <div class="problem-card">
+                    <span class="problem-emoji">🪞</span>
+                    <p>Tu n'oses plus te <strong>montrer en public</strong> sans t-shirt</p>
+                </div>
+                <div class="problem-card">
+                    <span class="problem-emoji">📅</span>
+                    <p>Tu as <strong>essayé des regimes</strong> mais tu reprends tout de suite après</p>
+                </div>
+                <div class="problem-card">
+                    <span class="problem-emoji">💻</span>
+                    <p>Tu travailles <strong>bureau</strong> et n'as plus le temps de t'entraîner</p>
+                </div>
+                <div class="problem-card">
+                    <span class="problem-emoji">😤</span>
+                    <p>Tu as été <strong>sportif avant</strong> mais tu ne sais plus par où reprendre</p>
+                </div>
+            </div>
+            
+            <div class="problem-solution">
+                <p>❌ <strong>Ce n'est pas de ta faute.</strong> C'est le système qui est contre toi.</p>
+                <p>✅ <strong>Mais il y a une solution.</strong> Une méthode qui fonctionne vraiment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION À PROPOS - CRÉDIBILITÉ
+         ============================================ -->
+    <section class="about" id="apropos">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <!-- PHOTO COACH DETAILLEE
+                         Taille recommandée: 600x800px minimum (portrait)
+                         Type: JPG ou PNG
+                         Remplace: coach-about.jpg
+                         Conseil: Photo où tu donnes un conseil, en mouvement, ou portrait professionnel
+                    -->
+                    <img src="images/coach-about.jpg" alt="Coach Romuald" onerror="this.src='https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=800&fit=crop'">
+                    <div class="about-image-badge">
+                        <span>📚 10+ ans</span>
+                        <small>d'expérience</small>
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    <span class="section-tag">Mon histoire</span>
+                    <h2>Salut, moi c'est <span id="config-name">Romuald</span></h2>
+                    
+                    <p>
+                        Il y a 5 ans, j'étais <strong>comme toi</strong>. Salarié en bureau, +15kg, plus ninguna énergie.
+                        J'ai essayé tous les régimes, tous les programmes, rien ne fonctionnait durablement.
+                    </p>
+                    <p>
+                        Puis j'ai découvert la <strong>vraie méthode</strong> : pas de restrictionExtreme, pas de sport 
+                        intensif à outrance, mais une approche <strong>scientifique et progressive</strong>.
+                    </p>
+                    <p>
+                        Aujourd'hui, j'ai accompagné <strong>+100 clients</strong> à transformer leur corps et leur vie.
+                        Ma mission : t'aider à reprendre le contrôle, <strong>sans sacrifier ta vie sociale</strong>.
+                    </p>
+                    
+                    <!-- STATS COACH -->
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">+100</span>
+                            <span class="stat-label">Clients transformés</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Années d'expérience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">90%</span>
+                            <span class="stat-label">Succès durable</span>
+                        </div>
+                    </div>
+                    
+                    <!-- RÉSEAUX SOCIAUX
+                         Va dans config.js pour changer les liens
+                    -->
+                    <div class="about-social">
+                        <a href="#" class="social-link" id="config-instagram" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                            <span>@romuald_coach</span>
+                        </a>
+                        <a href="#" class="social-link" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/></svg>
+                            <span>TikTok</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION TRANSFORMATIONS - AVANT/APRÈS
+         ============================================ -->
+    <section class="transformations" id="transformations">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Résultats réels</span>
+                <h2>Ils ont transformé leur corps</h2>
+                <p class="section-subtitle">Voici quelques-uns de mes clients qui ont atteint leurs objectifs</p>
+            </div>
+            
+            <div class="transformations-grid">
+                <!-- CLIENT 1 -->
+                <div class="transformation-card">
+                    <!-- IMAGES AVANT/APRES CLIENT 1
+                         Taille: 400x500px minimum chacune
+                         Type: JPG, même format/angle pour comparaison
+                         Remplace: avant-client1.jpg et apres-client1.jpg
+                    -->
+                    <div class="transformation-images">
+                        <div class="transformation-img-wrapper">
+                            <img src="images/avant-client1.jpg" alt="Avant client 1" onerror="this.src='https://images.unsplash.com/photo-1550831107-1553da8c8464?w=400&h=500&fit=crop&sat=-100'">
+                            <span class="img-label">AVANT</span>
+                        </div>
+                        <div class="transformation-img-wrapper">
+                            <img src="images/apres-client1.jpg" alt="Après client 1" onerror="this.src='https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400&h=500&fit=crop'">
+                            <span class="img-label">APRÈS</span>
+                        </div>
+                    </div>
+                    <div class="transformation-info">
+                        <span class="client-name">Thomas, 34 ans</span>
+                        <span class="client-result">-12kg en 4 mois</span>
+                        <p class="client-testimonial">"J'avais tout essayé, avec Romuald j'ai enfin des résultats durables. Je me sens comme avant !" </p>
+                    </div>
+                </div>
+                
+                <!-- CLIENT 2 -->
+                <div class="transformation-card">
+                    <div class="transformation-images">
+                        <div class="transformation-img-wrapper">
+                            <img src="images/avant-client2.jpg" alt="Avant client 2" onerror="this.src='https://images.unsplash.com/photo-1550831107-1553da8c8464?w=400&h=500&fit=crop&sat=-100'">
+                            <span class="img-label">AVANT</span>
+                        </div>
+                        <div class="transformation-img-wrapper">
+                            <img src="images/apres-client2.jpg" alt="Après client 2" onerror="this.src='https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400&h=500&fit=crop'">
+                            <span class="img-label">APRÈS</span>
+                        </div>
+                    </div>
+                    <div class="transformation-info">
+                        <span class="client-name">Lucas, 28 ans</span>
+                        <span class="client-result">+5kg muscle / -8kg graisse</span>
+                        <p class="client-testimonial">"Je suis devenu accro au sport. Ma confiance a explosé, autant dans ma vie perso que pro."</p>
+                    </div>
+                </div>
+                
+                <!-- CLIENT 3 -->
+                <div class="transformation-card">
+                    <div class="transformation-images">
+                        <div class="transformation-img-wrapper">
+                            <img src="images/avant-client3.jpg" alt="Avant client 3" onerror="this.src='https://images.unsplash.com/photo-1550831107-1553da8c8464?w=400&h=500&fit=crop&sat=-100'">
+                            <span class="img-label">AVANT</span>
+                        </div>
+                        <div class="transformation-img-wrapper">
+                            <img src="images/apres-client3.jpg" alt="Après client 3" onerror="this.src='https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400&h=500&fit=crop'">
+                            <span class="img-label">APRÈS</span>
+                        </div>
+                    </div>
+                    <div class="transformation-info">
+                        <span class="client-name">Maxime, 41 ans</span>
+                        <span class="client-result">-18kg en 6 mois</span>
+                        <p class="client-testimonial">"Pour la première fois de ma vie, je prends du plaisir à m'entraîner. Merci coach !"</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA APRÈS TRANSFORMATIONS -->
+            <div class="transformations-cta">
+                <p>Tu veux être le prochain ?</p>
+                <a href="#" class="btn btn-primary" id="config-cta-transform" target="_blank" rel="noopener">
+                    Réserve ton appel découverte gratuit
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION MÉTHODE - COMMENT ÇA MARCHE
+         ============================================ -->
+    <section class="method" id="methode">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">La méthode</span>
+                <h2>Comment on va travailler ensemble</h2>
+                <p class="section-subtitle">Un processus simple en 3 étapes vers ta transformation</p>
+            </div>
+            
+            <div class="method-steps">
+                <div class="method-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Diagnostic gratuit</h3>
+                        <p>On fait connaissance, on analyse ta situation actuelle, tes objectifs et tes contraintes. Pas d'engagement, c'est 100% gratuit.</p>
+                        <span class="step-duration">30 minutes</span>
+                    </div>
+                </div>
+                
+                <div class="method-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Plan personnalisé</h3>
+                        <p>Je te crée un programme sur-mesure : entraînement, nutrition, récupération. Adapté à ton style de vie (et à tes envies de pizza 🍕)</p>
+                        <span class="step-duration">Plan créé en 48h</span>
+                    </div>
+                </div>
+                
+                <div class="method-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Suivi quotidien</h3>
+                        <p>On avance ensemble avec check-ins réguliers, ajustements et motivation. Je suis disponible sur WhatsApp pour tes questions.</p>
+                        <span class="step-duration">Tous les jours</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION PACKS / TARIFS
+         ============================================ -->
+    <section class="pricing" id="tarifs">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Tarifs</span>
+                <h2>Choisis ton programme</h2>
+                <p class="section-subtitle">Des formules adaptées à chaque objectif</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- PACK DÉCOUVRTE -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <span class="pricing-name">Découverte</span>
+                        <div class="pricing-price">
+                            <span class="price">Gratuit</span>
+                        </div>
+                        <p class="pricing-desc">Pour découvrir comment on peut travailler ensemble</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✅ Appel découverte 30min</li>
+                        <li>✅ Bilan corporel initial</li>
+                        <li>✅ Conseils personnalisés</li>
+                        <li class="disabled">❌ Programme complet</li>
+                        <li class="disabled">❌ Suivi quotidien</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary pricing-cta" target="_blank" rel="noopener">
+                        Réserver mon appel
+                    </a>
+                </div>
+                
+                <!-- PACK TRANSFORMATION (RECOMMANDÉ) -->
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">⭐ Recommandé</div>
+                    <div class="pricing-header">
+                        <span class="pricing-name">Transformation</span>
+                        <div class="pricing-price">
+                            <span class="price">149€/mois</span>
+                        </div>
+                        <p class="pricing-desc">Le programme complet pour des résultats durables</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✅ Appel découverte inclus</li>
+                        <li>✅ Programme entraînement sur-mesure</li>
+                        <li>✅ Plan nutrition personnalisé</li>
+                        <li>✅ Suivi WhatsApp quotidien</li>
+                        <li>✅ Check-ins hebdo vidéo</li>
+                        <li>✅ Accès groupe privé</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary pricing-cta" target="_blank" rel="noopener">
+                        Démarrer ma transformation
+                    </a>
+                </div>
+                
+                <!-- PACK ELITE -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <span class="pricing-name">Élite</span>
+                        <div class="pricing-price">
+                            <span class="price">299€/mois</span>
+                        </div>
+                        <p class="pricing-desc">Accompagnement intensif pour résultats rapides</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✅ Tout du pack Transformation</li>
+                        <li>✅ Appels vidéo 2x/semaine</li>
+                        <li>✅ Programme mis à jour chaque semaine</li>
+                        <li>✅ Accès prioritaire 7j/7</li>
+                        <li>✅ Stratégie récupération/sommeil</li>
+                        <li>✅ Garantie résultats 90 jours</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary pricing-cta" target="_blank" rel="noopener">
+                        Passer à l'élite
+                    </a>
+                </div>
+            </div>
+            
+            <p class="pricing-note">💳 Paiement sécurisé. Résiliation possible à tout moment. Satisfait ou remboursé 30 jours.</p>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION TESTIMONIALS
+         ============================================ -->
+    <section class="testimonials" id="temoignages">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Ils témoignent</span>
+                <h2>Ce que disent mes clients</h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <!-- TESTIMONIAL 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Romuald m'a vraiment transformé. J'ai perdu 15kg en 5 mois et surtout je les ai mantenus. Son approche est vraiment différente des autres coaches."</p>
+                    <div class="testimonial-author">
+                        <!-- PHOTO CLIENT 1
+                             Taille: 80x80px, format carré
+                             Type: JPG ou PNG
+                             Remplace: testimonial-client1.jpg
+                        -->
+                        <img src="images/testimonial-client1.jpg" alt="Client" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face'">
+                        <div>
+                            <strong>Antoine D.</strong>
+                            <span>CEO, 38 ans</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- TESTIMONIAL 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Je n'y croyais plus après des années de yo-yo. Mais avec Romuald j'ai trouvé une méthode qui fonctionne vraiment. Je suis à -10kg et je me sens super."</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-client2.jpg" alt="Client" onerror="this.src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=face'">
+                        <div>
+                            <strong>Julien M.</strong>
+                            <span>Développeur, 29 ans</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- TESTIMONIAL 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Le suivi quotidien fait vraiment la différence. Quand j'ai un doute ou une faiblesse, Romuald est toujours là. Ça change tout."</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-client3.jpg" alt="Client" onerror="this.src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face'">
+                        <div>
+                            <strong>Nicolas B.</strong>
+                            <span>Manager, 42 ans</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- TESTIMONIAL 4 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Au départ j'étais sceptique avec tous les coaches sur Instagram. Mais Romuald delivers vraiment. 3 mois et j'ai des abdos pour la première fois de ma vie."</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-client4.jpg" alt="Client" onerror="this.src='https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=80&h=80&fit=crop&crop=face'">
+                        <div>
+                            <strong>Pierre L.</strong>
+                            <span>Commercial, 31 ans</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION FAQ
+         ============================================ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Questions fréquentes</span>
+                <h2>T'as des questions ?</h2>
+            </div>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Je n'ai jamais fait de musculation, c'est grave ?
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Pas du tout ! Je m'adapte à ton niveau. Que tu sois débutant ou ancien sportif, on construira un programme adapté à tes capacités actuelles. L'objectif c'est de progresser à ton rythme, sans blessure.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Je n'ai pas le temps avec mon travail...
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Je comprends, j'étais pareil ! Les programmes sont conçus pour être faits à la maison ou au gym en maximum 45min, 3-4 fois par semaine. Et on adapte tout à ton agenda. Qualité > Quantité.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Est-ce que je dois faire un régime ?
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>On ne fait pas de régime restrictif ici. On apprend à manger mieux sans se priver. L'idée c'est de créer des habitudes durables, pas de subir 8 semaines de privation puis tout reprendre.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Comment fonctionne le suivi ?
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>On communique principalement par WhatsApp. Tu m'envoies tes séances, tes repas, tes questions. Je te réponds rapidement et on fait des points réguliers en visio pour ajuster le programme.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Comment je peux payer ?
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Carte bancaire, virement, ou PayPal. Le paiement est sécurisé et tu peux résilier à tout moment. Pas d'engagement jangka panjang.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Et si ça ne fonctionne pas pour moi ?
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>J'offre une garantie satisfait ou remboursé 30 jours. Si tu n'es pas content dans le premier mois, je te rembourse. Pas de risque pour toi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION CTA FINAL
+         ============================================ -->
+    <section class="cta-section" id="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>T'es prêt à redevenir la meilleure version de toi-même ?</h2>
+                <p>
+                    Réserve ton appel découverte <strong>gratuit</strong> et découvre comment je peux t'aider 
+                    à atteindre tes objectifs. Pas d'engagement, on fait juste connaissance.
+                </p>
+                
+                <!-- CTA FINAL -->
+                <a href="#" class="btn btn-primary btn-large" id="config-cta-final" target="_blank" rel="noopener">
+                    <span>Je réserve mon appel maintenant</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                
+                <div class="cta-guarantee">
+                    <span>🛡️ Garantie satisfait ou remboursé 30 jours</span>
+                    <span>⚡ Réponse sous 24h</span>
+                    <span>💳 Paiement sécurisé</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION CONTACT
+         ============================================ -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Me contacter</h3>
+                    <p>Une question ? Envie d'en savoir plus ? N'hésite pas !</p>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:contact@romuald-coach.com" class="contact-method">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            <span>contact@romuald-coach.com</span>
+                        </a>
+                        <a href="#" class="contact-method" id="config-whatsapp" target="_blank" rel="noopener">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Calendly embed inline -->
+                <div class="contact-calendly">
+                    <h3>Réserve ton créneau</h3>
+                    <!-- CALENDLY EMBED
+                         IMPORTANT: Va dans config.js pour mettre ton lien Calendly
+                         Tu peux aussi utiliser ce embed code si tu veux le calendrier intégré :
+                    -->
+                    <!-- Décommente ce bloc si tu veux le calendrier intégré -->
+                    <!--
+                    <div class="calendly-inline-widget" data-url="TON_LIEN_CALENDLY_HERE" style="min-width:320px;height:630px;"></div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                    -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo" id="config-footer-name">Romuald Coach</span>
+                    <p>Coach sportif certifié - Transformation physique durable</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#hero">Accueil</a>
+                    <a href="#apropos">À propos</a>
+                    <a href="#transformations">Résultats</a>
+                    <a href="#tarifs">Tarifs</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener" aria-label="TikTok">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/></svg>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener" aria-label="YouTube">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 Romuald Coach. Tous droits réservés.</p>
+                <p>
+                    <a href="#">Mentions légales</a> | 
+                    <a href="#">Politique de confidentialité</a> | 
+                    <a href="#">CGV</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         CONFIGURATION - MODIFIE ICI
+         ============================================ -->
+    <script>
+        // ========================================
+        // CONFIG - MODIFIE CES VALEURS
+        // ========================================
+        const CONFIG = {
+            // TON NOM
+            coachName: "Romuald",
+            
+            // TON LIEN CALENDLY (OBLIGATOIRE)
+            // Va sur calendly.com, crée un événement, copie le lien ici
+            // Ex: "https://calendly.com/romuald-coach/consultation"
+            calendlyLink: "TON_LIEN_CALENDLY_ICI",
+            
+            // TON INSTAGRAM (sans @)
+            instagram: "romuald_coach",
+            
+            // TA PHOTO D'ACCROCHE
+            tagline: "+100 CLIENTS TRANSFORMÉS",
+            
+            // TON NUMÉRO WHATSAPP (avec code pays)
+            // Ex: "33612345678"
+            whatsapp: "33612345678",
+            
+            // TON EMAIL
+            email: "contact@romuald-coach.com"
+        };
+
+        // ========================================
+        // INITIALISATION
+        // ========================================
+        document.addEventListener('DOMContentLoaded', function() {
+            // Met à jour les liens CTA avec le lien Calendly
+            const ctas = document.querySelectorAll('.btn[href="#"], .btn[href=""]');
+            ctas.forEach(cta => {
+                if (cta.id && cta.id.includes('cta')) {
+                    if (CONFIG.calendlyLink !== "TON_LIEN_CALENDLY_ICI") {
+                        cta.href = CONFIG.calendlyLink;
+                    }
+                }
+            });
+            
+            // Met à jour les liens sociaux
+            const insta = document.getElementById('config-instagram');
+            if (insta && CONFIG.instagram) {
+                insta.href = "https://instagram.com/" + CONFIG.instagram;
+            }
+            
+            // Met à jour WhatsApp
+            const whatsapp = document.getElementById('config-whatsapp');
+            if (whatsapp && CONFIG.whatsapp) {
+                whatsapp.href = "https://wa.me/" + CONFIG.whatsapp;
+            }
+        });
+    </script>
+
+    <!-- JavaScript principal -->
+    <script src="script.js"></script>
+</body>
+</html>
